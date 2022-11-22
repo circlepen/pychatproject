@@ -1,0 +1,9 @@
+psycopg2-binary
+databases[postgresql]
+SQLAlchemy
+uvicorn
+jinja2
+fastapi
+pydantic
+python-multipart
+websockets
