@@ -19,13 +19,7 @@ services:
   db:
     image: postgres:13-alpine
     container_name: db
-    volumes:
-      - ./data/:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=testuser
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=backend_db
-
-
-volumes: 
-    data: 

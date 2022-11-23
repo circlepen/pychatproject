@@ -28,7 +28,7 @@ async def ws_chat(websocket: WebSocket):
     target = websocket.cookies.get("X-TargetUser")
 
     if sender:
-        if target:
+        if target!= "all":
             await ws_manager.connect(websocket, sender, target)
             response = {
                 "sender": sender,
